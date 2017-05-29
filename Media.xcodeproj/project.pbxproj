@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F06B14D51C76C16300C8C291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B14D41C76C16300C8C291 /* AppDelegate.swift */; };
-		F06B14D71C76C16300C8C291 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B14D61C76C16300C8C291 /* ViewController.swift */; };
+		F06B14D71C76C16300C8C291 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B14D61C76C16300C8C291 /* CameraViewController.swift */; };
 		F06B14DA1C76C16300C8C291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B14D81C76C16300C8C291 /* Main.storyboard */; };
 		F06B14DC1C76C16300C8C291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06B14DB1C76C16300C8C291 /* Assets.xcassets */; };
 		F06B14DF1C76C16300C8C291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B14DD1C76C16300C8C291 /* LaunchScreen.storyboard */; };
+		F06B14E71C76CCF300C8C291 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B14E61C76CCF300C8C291 /* VideoViewController.swift */; };
+		F06B14EC1C76D51100C8C291 /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = F06B14EA1C76D51100C8C291 /* chomp.caf */; };
+		F06B14F01C76D68400C8C291 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B14EF1C76D68400C8C291 /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F06B14D11C76C16300C8C291 /* Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Media.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06B14D41C76C16300C8C291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F06B14D61C76C16300C8C291 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F06B14D61C76C16300C8C291 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		F06B14D91C76C16300C8C291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F06B14DB1C76C16300C8C291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F06B14DE1C76C16300C8C291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F06B14E01C76C16300C8C291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06B14E61C76CCF300C8C291 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		F06B14EA1C76D51100C8C291 /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
+		F06B14EF1C76D68400C8C291 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		F06B14D31C76C16300C8C291 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				F06B14E81C76D4F400C8C291 /* Controllers */,
+				F06B14E91C76D50000C8C291 /* View */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		F06B14E81C76D4F400C8C291 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				F06B14D41C76C16300C8C291 /* AppDelegate.swift */,
-				F06B14D61C76C16300C8C291 /* ViewController.swift */,
+				F06B14D61C76C16300C8C291 /* CameraViewController.swift */,
+				F06B14E61C76CCF300C8C291 /* VideoViewController.swift */,
+				F06B14EF1C76D68400C8C291 /* AnimationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F06B14E91C76D50000C8C291 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F06B14EA1C76D51100C8C291 /* chomp.caf */,
 				F06B14D81C76C16300C8C291 /* Main.storyboard */,
 				F06B14DB1C76C16300C8C291 /* Assets.xcassets */,
 				F06B14DD1C76C16300C8C291 /* LaunchScreen.storyboard */,
 				F06B14E01C76C16300C8C291 /* Info.plist */,
 			);
-			path = Media;
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +121,7 @@
 				TargetAttributes = {
 					F06B14D01C76C16300C8C291 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -122,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06B14EC1C76D51100C8C291 /* chomp.caf in Resources */,
 				F06B14DF1C76C16300C8C291 /* LaunchScreen.storyboard in Resources */,
 				F06B14DC1C76C16300C8C291 /* Assets.xcassets in Resources */,
 				F06B14DA1C76C16300C8C291 /* Main.storyboard in Resources */,
@@ -135,8 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F06B14D71C76C16300C8C291 /* ViewController.swift in Sources */,
+				F06B14D71C76C16300C8C291 /* CameraViewController.swift in Sources */,
 				F06B14D51C76C16300C8C291 /* AppDelegate.swift in Sources */,
+				F06B14E71C76CCF300C8C291 /* VideoViewController.swift in Sources */,
+				F06B14F01C76D68400C8C291 /* AnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +282,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.Media;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +294,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.Media;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +317,7 @@
 				F06B14E51C76C16300C8C291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
